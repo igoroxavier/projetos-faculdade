@@ -1,25 +1,28 @@
 #include <stdio.h>
+#include <ctype.h>
 
-void retornaMaiorMenor(int *ptr_a,  int *ptr_b) {
-	int temp;
-	if( *ptr_b > * ptr_a){
-		temp = *ptr_a;
-		*ptr_a = *ptr_b;
-		*ptr_b = temp;
+#define TAM 81
+
+int conta_vogais(char* s) {
+	int contador = 0;
+	for (int i = 0; s[i] != '\0'; i++) {
+		char letra = tolower(s[i]);
+
+		if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+			contador++;
+		}
 	}
+	return contador;
 }
 
 int main(void) {
+	char string[TAM];
 
-	int a, b;
-	printf("Entre com dois valores inteiros: ");
-	scanf("%d %d", &a, &b);
-	printf("ANTES: \n");
-	printf("valor de a = %d \n", a);
-	printf("valor de b = %d \n", b);
-	printf("DEPOIS:\n");
-	retornaMaiorMenor(&a, &b);
-	printf("valor de a = %d \n", a);
-	printf("valor de b = %d \n", b);
+	printf("Digite uma string: ");
+	scanf(" %80[^\n]", string);
+
+	int contarAsVogais = conta_vogais(string);
+	printf("\"%s\" tem %d vogais.\n", string, contarAsVogais);
+
 	return 0;
 }
