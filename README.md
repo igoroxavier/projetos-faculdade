@@ -29,5 +29,3 @@ O projeto é organizado diretamente pelo nome das disciplinas para facilitar a n
 * **Versionamento:** Git e GitHub
 
 ---
-2. Definir o arquivo/projeto desejado como o projeto de inicialização.
-3. Pressionar `Ctrl + F5` (ou clicar no botão de "Play" verde) para compilar e executar o código.
