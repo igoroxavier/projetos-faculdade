@@ -16,9 +16,9 @@ O projeto é organizado diretamente pelo nome das disciplinas para facilitar a n
 ### 🔹 Modelagem e Programação (Python)
 
 ### 🔹 Programação em C
-* `01-funcoes/`: Exercícios de modularização e escopo (Ex: Contador de vogais).
-* `02-vetores/`: Manipulação e varredura de arrays unidimensionais.
+* Pasta dedicada aos conceitos de sintaxe da linguagem C, manipulação de strings, ponteiros, funções e estruturas de repetição.
 
+###
 * *Próximas disciplinas e tópicos serão adicionados aqui à medida que eu avançar no curso.*
 
 ---
